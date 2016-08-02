@@ -1,0 +1,16 @@
+h1{
+  color: green;
+  font-family: fantasy;
+  font-size: 64px;
+}
+.gold{
+  color: gold;
+}
+
+.score{
+  color: gray;
+}
+#gameLink{
+  text-align: center;
+  border: 1px solid grey;
+}

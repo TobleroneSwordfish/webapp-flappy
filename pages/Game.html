@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../lib/bootstrap.css">
+  <script type="text/javascript" src="../lib/phaser.min.js"></script>
+  <script type="text/javascript" src="../js/flappy.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Pointless Bird.</h1>
+        <p>Still pointless!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../assets/screenshot.png" class="img-rounded img-responsive"/>
+      </div>
+    </div>
+  </div>
+
+      <div class="row">
+        <div class="col-md-2">
+          <button id="credits" type="button" class="btn btn-default">Who to blame</button>
+        </div>
+        <div class="col-md-1">
+          <button id="help" type="button" class="btn btn-default">Help</button>
+        </div>
+      </div>
+      <div id="content"></div>
+      <div class="row">
+        <div id="game" class="col-md-9"></div>
+        <div id="scoreboard" class="col-md-2">
+          <h1>Top scores<h1>
+        </div>
+        <div class="col-md-1">
+          <p>Share your score</p>
+          <a target="_blank" id="twitterShare">
+            <img src="../assets/twitter.ico" class="img-responsive" id="twitterBtn"/>
+          </a>
+        </div>
+      </div>
+      <h1>Gravity settings</h1>
+      <div class="row">
+        <button class="btn btn-default col-md-1" id="gravBtn200">200</button>
+        <button class="btn btn-default col-md-1" id="gravBtn150">150</button>
+        <button class="btn btn-default col-md-1" id="gravBtn100">100</button>
+        <button class="btn btn-default col-md-1" id="gravBtn50">50</button>
+        <label><input type="checkbox" id="soundBox">Sound</input></label>
+      </div>
+  </div>
+  <script type="text/javascript" src="../lib/jquery.js"></script>
+  <script type="text/javascript" src="../js/interactivity.js"></script>
+</div>
+
+
+</body>
+</html>

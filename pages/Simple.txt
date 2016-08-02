@@ -1,0 +1,11 @@
+Pointless Bird
+
+Welcome to Pointless Bird.
+
+Here will be the game
+<ul>
+  How to play:
+  <li> Press SPACE to flap your wings.</li>
+  <li> Avoid the pipes.</li>
+  <li> If you crash, just try again!</li>
+</ul>
