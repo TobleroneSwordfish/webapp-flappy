@@ -1,4 +1,6 @@
 var highScore = 0;
+var scoreName = "";
+$("#gravBtn200").focus();
 jQuery("#credits").on("click", function(){
   jQuery("#content").empty();
   var message = "I will not be named.";
@@ -15,15 +17,22 @@ jQuery("#help").on("click", function(){
 function registerScore(score){
   if (score > highScore) {
     highScore = score;
+    if (isAnnoying){
+      game.sound.play("mlg");
+    }
     var playerName = prompt("You beat the top score. Enter a stupid name.");
     var scoreEntry = "<li>" + playerName + ": " + score.toString() + "</li>";
     jQuery("#scoreboard").append(scoreEntry);
+    scoreName = playerName;
   }
 }
 $("#twitterBtn").on("click", function(){
-  var message = "I wasted way too much of my life to achieve a score of: " + highScore.toString() + " on Pointless Bird: ";
+  var message = scoreName + " wasted way too much of their life to achieve a score of: " + highScore.toString() + " on Pointless Bird: ";
   var url = "https://twitter.com/share?text=" + encodeURIComponent(message);
   $("#twitterShare").attr("href",url);
+});
+$("#2player").on("click", function(){
+  
 });
 $("#gravBtn50").on("click", function(){
   SetGravity(50);
@@ -36,4 +45,13 @@ $("#gravBtn150").on("click", function(){
 });
 $("#gravBtn200").on("click", function(){
   SetGravity(200);
+});
+$("#gravBtn300").on("click", function(){
+  SetGravity(300);
+});
+$("#soundBox").bind("change", function(){
+  ToggleSound();
+});
+$("flappyIcon").on("click", function(){
+  //player =
 });
